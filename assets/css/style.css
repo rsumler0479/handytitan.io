@@ -115,7 +115,7 @@ h6 {
   color: #0b1c39;
   margin-top: 0px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 200;
   text-transform: normal;
 }
 p {
@@ -1767,7 +1767,7 @@ hr {
   font-size: 70px;
   font-weight: 700;
   line-height: 1.2;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-family: "Teko", sans-serif;
 }
 @media (max-width: 575px) {
@@ -2524,7 +2524,7 @@ hr {
   color: #fff;
   font-size: 70px;
   font-weight: 900;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .slider-area .hero-cap h2 {
