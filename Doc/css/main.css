@@ -1,3 +1,4 @@
+html,
 body {
   background-color: #fff;
   font-family: "Lato", sans-serif;
@@ -84,7 +85,7 @@ section p {
   clear: both;
 }
 .clearfix {
-  *zoom: 1;
+  zoom: 1;
 }
 
 .tan {
