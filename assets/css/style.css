@@ -2897,6 +2897,15 @@ hr {
   .rowman {
     flex-direction: column; /* Stack columns vertically on smaller screens */
     align-items: center; /* Center columns horizontally */
+    padding: 0 15px; /* Add padding to prevent overflow */
+    box-sizing: border-box; /* Include padding in element's total width */
+    overflow: hidden; /* Hide any overflowing content */
+  }
+
+  .rowman > * {
+    width: 100%; /* Make child elements take full width */
+    max-width: 100%; /* Prevent children from overflowing */
+    margin-bottom: 15px; /* Space between items */
   }
 }
 
