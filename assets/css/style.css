@@ -3355,6 +3355,8 @@ hr {
 }
 
 .gal_style {
+  position: relative; /* Position relative for pseudo-element */
+  padding: 2px; /* General padding */
   font-size: 1.5rem;
   color: white;
   margin-right: 20px;
@@ -3362,6 +3364,22 @@ hr {
 
 .gal_style:hover {
   color: rgb(0, 0, 0);
+}
+
+.gal_style.selected {
+  text-decoration: none; /* Underline on selected */
+  background-color: transparent; /* Highlight color */
+  color: hwb(199 7% 0%); /* Text color */
+}
+
+.gal_style.selected::after {
+  content: ""; /* Create a pseudo-element for the underline */
+  position: absolute;
+  left: 0;
+  bottom: -4px; /* Move the underline down */
+  width: 100%;
+  height: 2px; /* Thickness of underline */
+  background-color: hwb(199 7% 0%); /* Underline color */
 }
 
 .navigation {
