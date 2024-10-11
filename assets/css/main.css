@@ -2128,6 +2128,20 @@ hr {
 .slider-area {
   margin-top: -1px;
 }
+
+/* @media (max-width: 767px) {
+  .slider-area {
+    margin-bottom: ;
+  }
+} */
+
+.slider-height2 {
+  min-height: 390px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 1000;
+}
+
 .slider-area .hero__caption {
   padding: 39px 70px 56px 68px;
   margin-left: -25px;

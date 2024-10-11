@@ -3421,18 +3421,14 @@ hr {
   background-size: cover;
   background-repeat: no-repeat;
 }
-@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+@media only screen and (max-width: 767px) {
   .contact-with-area {
     padding-top: 70px;
     padding-bottom: 180px;
   }
 }
-@media (max-width: 575px) {
-  .contact-with-area {
-    padding-top: 70px;
-    padding-bottom: 180px;
-  }
-}
+
 .contact-with-area .contact-us-caption p {
   color: #fff;
   padding-top: 20px;
