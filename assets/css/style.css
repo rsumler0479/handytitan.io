@@ -325,6 +325,11 @@ hr {
   opacity: 1;
   visibility: visible;
 }
+
+.hovering:hover {
+  color: white;
+}
+
 .owl-carousel:hover .owl-nav div:hover {
   color: #fff;
   background: #ff3500;
