@@ -258,41 +258,56 @@ footer a {
 
 /* Mobile Adjustments */
 @media (max-width: 768px) {
-  .header-right {
-    flex-direction: column;
-    align-items: flex-end;
-  }
-
-  .hero {
-    flex-direction: column;
-    text-align: center;
-    height: auto;
-    padding: 60px 20px;
-  }
-
   .hero-text h2 {
-    font-size: 36px;
+    font-size: 28px; /* Reduce heading size for mobile */
   }
 
-  .services-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .trust-grid {
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-text h2 {
-    font-size: 28px;
-  }
-
-  .services-grid {
-    grid-template-columns: 1fr;
+  .hero-text p {
+    font-size: 16px; /* Slightly smaller text for better readability */
   }
 
   .hero-form {
-    width: 100%;
+    padding: 15px; /* Reduce padding on mobile */
+    max-width: 350px; /* Reduce form width */
+  }
+
+  .hero-form h3 {
+    font-size: 20px; /* Adjust form heading */
+  }
+
+  .hero-form input,
+  .hero-form textarea {
+    font-size: 14px; /* Smaller form text on mobile */
+  }
+}
+
+/* Mobile-Specific Adjustments for Smaller Screens */
+@media (max-width: 480px) {
+  .hero {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .hero-text h2 {
+    font-size: 22px; /* Further reduce heading size for small screens */
+  }
+
+  .hero-text p {
+    font-size: 14px;
+  }
+
+  .hero-form {
+    max-width: 300px; /* Narrower form on very small screens */
+    padding: 10px;
+  }
+
+  .hero-form h3 {
+    font-size: 18px; /* Smaller form heading */
+  }
+
+  .hero-form input,
+  .hero-form textarea {
+    font-size: 14px;
+    padding: 10px;
   }
 }
