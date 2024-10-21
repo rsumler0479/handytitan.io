@@ -3,29 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/landing_style.css"> <!-- Link to your CSS file -->
-    <title>Handyman Services</title>
+    <title>Handy Titan</title>
+    <link rel="stylesheet" href="assets/css/landing_style.css">
+    <script defer src="countdown.js"></script> <!-- Include countdown script -->
 </head>
 <body>
-    <div class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h2>Reliable Handyman Services</h2>
-                <p>Your one-stop solution for all home repairs and improvements. Get a free quote today!</p>
-            </div>
-            <div class="hero-form">
-                <h3>Contact Us</h3>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <input type="text" placeholder="Your Phone" required>
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </div>
+    <!-- Header Section -->
+    <header>
+        <div class="rating">
+            ⭐ 4.7/5 on Thumbtack
         </div>
-    </div>
-    
-    <!-- Add your other content here -->
+        <nav class="navbar">
+            <a href="#" class="logo">
+                <img src="logo.png" alt="Handy Titan" width="300" height="92">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-toggle" onclick="toggleMenu()">☰</div>
+            <ul class="mobile-menu">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <script src="script.js"></script> <!-- Link to your JS file if necessary -->
+    <!-- Banner Section -->
+    <section class="banner" style="background-image: url('handyman-woman-bg.jpg');">
+        <div class="overlay"></div>
+        <div class="banner-content">
+            <h1>DIY Without the Hassle—Get 20% Off Your First Handyman Service Today!</h1>
+            <p>Let The Handy Titan handle the tricky tasks, so you can enjoy your home projects stress-free. Limited-time offer—only a few spots left for a FREE estimate!</p>
+            <div class="countdown">Offer expires in <span id="timer"></span>!</div>
+            <button class="primary">Claim My 20% Off + Free Estimate</button>
+        </div>
+    </section>
+
+    <!-- Input Form Section -->
+    <section class="form-section">
+        <h3>Request Your Free Estimate Now!</h3>
+        <form class="estimate-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Preferred Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="job-type">Type of Job</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="assembly" name="job-type" value="Assembly">
+                    <label for="assembly">Furniture Assembly</label><br>
+                    <input type="checkbox" id="lighting" name="job-type" value="Lighting">
+                    <label for="lighting">Lighting Installation</label><br>
+                    <input type="checkbox" id="repair" name="job-type" value="Repair">
+                    <label for="repair">Home Repair</label><br>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+            <button type="submit" class="primary">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Handy Titan. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JS for Menu Toggle -->
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.mobile-menu');
+            menu.classList.toggle('open');
+        }
+    </script>
 </body>
 </html>
